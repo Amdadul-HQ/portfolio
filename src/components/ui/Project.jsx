@@ -46,8 +46,8 @@ const Project = () => {
                     <h1 className='text-xl text-gray-300 mt-2 font-medium'>{item.name}</h1>
                     <p className='text-base text-justify mt-4 font-normal'>{item.description}</p>
                     <div className='flex justify-between my-6'>
-                        <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full' target='_blank' href={'/'}>Live View <FiMonitor className='text-xl'/> </Link>
-                        <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full' href={'/'}>GitHub Link <FaGithub className='text-xl'/></Link>
+                        <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full border-purple-400' target='_blank' href={'/'}>Live View <FiMonitor className='text-xl'/> </Link>
+                        <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full border-purple-400' href={'/'}>GitHub Link <FaGithub className='text-xl'/></Link>
                     </div>
                    </div>
                 </div>
