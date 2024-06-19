@@ -63,7 +63,7 @@ const Skills = () => {
 
         <div>
           <Marquee direction="right" className="max-w-[1200px] mx-auto">
-            <div className="flex text-8xl gap-x-20 mt-6">
+            <div className="flex text-8xl gap-x-28 mt-6">
               <div className="flex justify-center flex-col items-center">
               <SiMongodb className="text-green-500" />
                 <h1 className="text-white text-lg font-normal">MongoDB</h1>

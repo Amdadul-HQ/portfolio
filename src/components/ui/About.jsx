@@ -5,7 +5,7 @@ import TabsPage from "../Tabs/Tabs";
 
 const About = () => {
   return (
-    <section>
+    <section className="mt-32">
       <div className="flex flex-row-reverse mt-20 justify-around">
         <div className="lg:w-1/2">
           <h1 className="text-3xl text-gray-200 font-medium border-b-2 pb-2">

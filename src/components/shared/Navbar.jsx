@@ -24,7 +24,7 @@ const Navbar = () => {
         }
     ]
   return (
-    <nav className="container mx-auto py-5 flex justify-between items-center border-b border-purple-300 px-5 rounded-2xl shadow-xl">
+    <nav className="container mx-auto py-2 flex justify-between items-center border-b border-purple-300 px-5 rounded-xl shadow-xl">
       <div className="text-gray-200 flex flex-col max-w-44 cursor-pointer">
         <h1 className="text-3xl text-justify font-medium tracking-[7px]">Rimon</h1>
         <p className="text-gray-400 tracking-wide uppercase text-xs font-normal">create you unique</p>
