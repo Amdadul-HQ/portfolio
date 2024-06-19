@@ -1,7 +1,6 @@
-import Image from "next/image";
+
 import HomeH from "./home/page";
-import About from "@/components/ui/About";
-import Skills from "@/components/ui/Skills";
+export const dynamic = "force-dynamic"
 
 export default function Home({children}) {
   return (

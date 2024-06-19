@@ -1,4 +1,5 @@
 'use client'
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import { createContext } from 'react';
 import Link from 'next/link';
@@ -66,15 +67,6 @@ const Project = () => {
                 </li>)
             }
       
-       
-            {/* <div className=''>
-                <Image src={'/project/assetFlow.png'}  style={{width:'100%',height:'400px'}} width={400} height={200} alt=''></Image>
-            </div>
-       
-       
-            <div className=''>
-                <Image src={'/project/query.png'} style={{width:'100%',height:'400px'}}  width={400} height={250} alt=''></Image>
-            </div> */}
        
       </div>
             
