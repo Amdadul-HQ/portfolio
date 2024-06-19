@@ -2,6 +2,7 @@
 import React from 'react';
 import contact from '../../../public/contact.json'
 import Lottie from 'lottie-react';
+import { createContext } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 const Contact = () => {
