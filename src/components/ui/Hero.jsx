@@ -15,7 +15,7 @@ const Hero = () => {
                     Let's Talk 💬
                 </button>
             </div>
-            <div className=''>
+            <div className='relative'>
                 <Image src={"/file.png"} width={500} height={500} alt='' className='bg-transparent shadow-inner backdrop-grayscale-0 border-2 border-purple-400 rounded-full'></Image>
             </div>
         </section>
