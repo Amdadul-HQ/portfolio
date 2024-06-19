@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaHtml5, FaReact } from "react-icons/fa";
@@ -8,11 +9,17 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Skills = () => {
   return (
-    <section className="mt-32 ">
+    <motion.section
+    variants={fadeIn("up",0.3)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once:false,amount:0.1}}
+    className="mt-32 ">
       <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
         My Skills
       </h1>
@@ -92,7 +99,7 @@ const Skills = () => {
           </Marquee>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
