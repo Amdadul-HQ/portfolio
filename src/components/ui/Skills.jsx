@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaHtml5, FaReact } from "react-icons/fa";
@@ -10,16 +10,17 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { createContext } from 'react';
 import { fadeIn } from "../variants";
 
 const Skills = () => {
   return (
     <motion.section
-    variants={fadeIn("up",0.3)}
-    initial="hidden"
-    whileInView={"show"}
-    viewport={{once:false,amount:0.1}}
-    className="mt-32 ">
+     variants={fadeIn('up',0.2)}
+     initial="hidden"
+     whileInView="show"
+      className="mt-32 overflow-hidden"
+    >
       <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
         My Skills
       </h1>
@@ -72,7 +73,7 @@ const Skills = () => {
           <Marquee direction="right" className="max-w-[1200px] mx-auto">
             <div className="flex text-8xl gap-x-28 mt-6">
               <div className="flex justify-center flex-col items-center">
-              <SiMongodb className="text-green-500" />
+                <SiMongodb className="text-green-500" />
                 <h1 className="text-white text-lg font-normal">MongoDB</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
@@ -80,11 +81,11 @@ const Skills = () => {
                 <h1 className="text-white text-lg font-normal">Node.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
-              <SiExpress className="text-yellow-500" />
+                <SiExpress className="text-yellow-500" />
                 <h1 className="text-white text-lg font-normal">Express.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
-                <Image src={'/jwt.png'} width={96} height={96} alt=""></Image>
+                <Image src={"/jwt.png"} width={96} height={96} alt=""></Image>
                 <h1 className="text-white text-lg font-normal">JWT</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
