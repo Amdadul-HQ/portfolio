@@ -16,7 +16,7 @@ const TabsPage = () => {
           <h1 className="text-xl text-purple-400 font-medium">
             More than 15+ projects experience.
           </h1>
-          <ul className="text-base list-disc mt-4 space-y-2">
+          <ul className="text-sm list-disc font-light mt-4 space-y-2 ml-5">
             <li>Experience in building full-stack projects for the assignment purpose where scored full marks.</li>
             <li>In my projects I experimented with express.js, mongodb, mongoose, react.js, bootstrap, next.js , stripe, tailwind css, metarial ui, firebase and some popular npm packages json web token, bcrypt, validator etc.</li>
             <li>Provided services related to web design to some of my friends.</li>

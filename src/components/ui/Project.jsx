@@ -54,10 +54,10 @@ const Project = () => {
                 initial="hidden"
                 whileInView={"show"}
                 className='border-2 group rounded-[30px] bg-[rgba(22,26,49,1)] overflow-hidden '>
-                    <Image src={'/project/dremhouse.png'} style={{width:'100%',height:'400px',}} className='rounded-t-3xl h-[400px] group-hover:scale-105 overflow-hidden transition-all duration-300'  width={400} height={250} alt=''></Image>
+                    <Image src={'/project/dremhouse.png'} style={{width:'100%',height:'280px',}} className='rounded-t-3xl h-[200px] group-hover:scale-105 overflow-hidden transition-all duration-300'  width={400} height={200} alt=''></Image>
                    <div className='px-8 py-2'>
                     <h1 className='text-xl text-gray-300 mt-2 font-medium'>{item.name}</h1>
-                    <p className='text-base text-justify mt-4 font-normal'>{item.description}</p>
+                    <p className='text-sm text-justify font-light'>{item.description}</p>
                     <div className='flex justify-between my-6'>
                         <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full border-purple-400' target='_blank' href={'/'}>Live View <FiMonitor className='text-xl'/> </Link>
                         <Link className='flex gap-x-3 text-base items-center px-6 py-2 border rounded-full border-purple-400' href={'/'}>GitHub Link <FaGithub className='text-xl'/></Link>

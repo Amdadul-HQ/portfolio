@@ -16,6 +16,7 @@ import { fadeIn } from "../variants";
 const Skills = () => {
   return (
     <motion.section
+    id="myskills"
      variants={fadeIn('up',0.2)}
      initial="hidden"
      whileInView="show"

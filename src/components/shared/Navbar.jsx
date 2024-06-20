@@ -11,15 +11,19 @@ const Navbar = () => {
             path:"/"
         },
         {
+            title:"SKILL's",
+            path:"/skills"
+        },
+        {
+          title:"PROJECT",
+          path:"/project"
+        },
+        {
             title:"ABOUT",
             path:"/about"
         },
         {
-            title:"PROJECT",
-            path:"/project"
-        },
-        {
-            title:"CONTACT",
+          title:"CONTACT",
             path:"/contact"
         }
     ]

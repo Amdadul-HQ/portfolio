@@ -14,11 +14,11 @@ const About = () => {
         variants={fadeIn('left',0.2)}
         initial="hidden"
         whileInView={"show"}
-         className="lg:w-1/2">
+         className="w-9/12 px-6">
           <h1 className="text-3xl text-gray-200 font-medium border-b-2 pb-2">
             About Me
           </h1>
-          <p className="text-lg text-white mt-3 text-justify">
+          <p className="text-sm text-white mt-3 text-justify">
             Hello i am passionate <strong>Web Developer</strong> Amdadul Haque
             Bhuiyan, I embarked on my journey in technology after completing my
             diploma in Electrical Engineering from Feni Polytechnic institute.
@@ -30,7 +30,7 @@ const About = () => {
             and determination to excel, I immersed myself in learning of skills
             essential for modern Web Development.
           </p>
-          <div>
+          <div className="">
             <TabsPage/>
           </div>
         </motion.div>
