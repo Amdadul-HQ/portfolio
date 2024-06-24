@@ -8,11 +8,11 @@ import React from 'react';
 const HomePage = () => {
     return (
         <section>
-            <Hero/>
-            <Skills/>
+            {/* <Hero/> */}
+            {/* <Skills/>
             <Project/>
             <About/>
-            <Contact/>
+            <Contact/> */}
         </section>
     );
 };

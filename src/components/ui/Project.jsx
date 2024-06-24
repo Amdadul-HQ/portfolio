@@ -38,10 +38,12 @@ const project = [
 const Project = () => {
     return (
         <motion.section
+        id='project'
         variants={fadeIn('up',0.2)}
         initial="hidden"
         whileInView={"show"}
-        className='mt-32 overflow-hidden'>
+        className='flex min-h-screen flex-col justify-center'>
+           <div className='mt-48'>
            <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
         My Project's
       </h1>
@@ -69,6 +71,7 @@ const Project = () => {
       
        
       </div>
+           </div>
             
         </motion.section>
     );

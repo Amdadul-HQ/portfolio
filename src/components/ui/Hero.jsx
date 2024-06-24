@@ -73,6 +73,19 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.7'
                 }}
+                className='border-purple-300 px-6 py-2 mr-4 overflow-hidden text-xl font-medium border-2 mt-3 rounded-full'>
+                    <Link target='_blank' href={`https://drive.google.com/file/d/1ee_UDd7bBfWaU5V4Dw2wMLhPhs_S8ZRE/view`}>Download Resume</Link>
+                </motion.button>
+                <motion.button
+                initial={{x:-200,opacity:0}}
+                animate={{
+                    x:0,
+                    opacity:1
+                }}
+                transition={{
+                    duration:'1',
+                    delay:'0.7'
+                }}
                 className='border-purple-300 px-6 py-2 overflow-hidden text-xl font-medium border-2 mt-3 rounded-full'>
                     Let's Talk 💬
                 </motion.button>
@@ -104,11 +117,11 @@ const Hero = () => {
                     duration:'1',
                     delay:'2'
                  }}
-                 className='flex absolute right-40 bottom-[135px] gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
-                    <Link href={'/'}><FaFacebook/></Link>
-                    <Link href={'/'}><FaGithub/></Link>
-                    <Link href={'/'}><FaLinkedin/></Link>
-                    <Link href={'/'}><FaTwitter/></Link>
+                 className='flex absolute right-40 bottom-[135px] text-gray-500 gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
+                    <Link target='_blank' href={'https://www.facebook.com/amdadul.haque.54540218/'}><FaFacebook/></Link>
+                    <Link target='_blank' href={'https://github.com/Amdadul-HQ'}><FaGithub/></Link>
+                    <Link target='_blank' href={'https://www.linkedin.com/in/amdadul-haque-bhuiyan/'}><FaLinkedin/></Link>
+                    <Link target='_blank' href={'https://x.com/hoque_amdaul'}><FaTwitter/></Link>
                 </motion.div>
             </motion.div>
         </section>

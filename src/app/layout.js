@@ -13,16 +13,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className={poppins.className}>
         <AnimateCurse/>
-        <header>
+        <header className="max-w-screen-xl mx-auto">
           <Navbar />
         </header>
-        <main>{children}</main>
-        <footer>
+        <main className="max-w-screen-xl mx-auto">{children}</main>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </body>
     </html>
   );

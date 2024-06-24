@@ -8,7 +8,7 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   return (
-    <section className="mt-32">
+    <section id="about" className="flex min-h-screen flex-col justify-center">
       <div className="flex flex-row-reverse mt-20 justify-around overflow-hidden">
         <motion.div
         variants={fadeIn('left',0.2)}
