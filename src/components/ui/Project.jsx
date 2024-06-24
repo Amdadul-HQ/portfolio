@@ -19,19 +19,19 @@ const project = [
     },
     {   
         id:2,
-        name:"DREAM HOUSE",
-        description:"Where you can find your Dream House by seeing every details. You can see the property live location and conditions. You can contact the property owner",
-        live:"/",
-        git:"/",
-        img:"/project/dremhouse.png"
+        name:"ASSET FLOW",
+        description:"This web application allows businesses to manage their assets and products efficiently. HR Managers can track how employees are using company assets, categorized as returnable (laptops, keyboards) or non-returnable (pens, paper).",
+        live:"https://assetflow-2ac74.web.app",
+        git:"https://github.com/Amdadul-HQ/assetFlow_client_side",
+        img:"/project/assetFlow.png"
     },
     {   
         id:3,
-        name:"DREAM HOUSE",
-        description:"Where you can find your Dream House by seeing every details. You can see the property live location and conditions. You can contact the property owner",
-        live:"/",
-        git:"/",
-        img:"/project/dremhouse.png"
+        name:"QUERY",
+        description:"This is a full-stack web application designed to provide users with alternative product information, allowing them to query, view, and provide recommendations for various products.",
+        live:"https://shop-now-fc5a4.web.app/",
+        git:"https://github.com/Amdadul-HQ/querie_client_site",
+        img:"/project/query.png"
     },
 ]
 
@@ -54,13 +54,13 @@ const Project = () => {
                 <motion.div
                 
                 className='border-2 group rounded-[30px] bg-[rgba(22,26,49,1)] overflow-hidden '>
-                    <Image src={'/project/dremhouse.png'} style={{width:'100%',height:'280px',}} className='rounded-t-3xl h-[200px] group-hover:scale-105 overflow-hidden transition-all duration-300'  width={400} height={200} alt=''></Image>
+                    <Image src={item.img} style={{width:'100%',height:'280px',}} className='rounded-t-3xl h-[200px] group-hover:scale-105 overflow-hidden transition-all duration-300'  width={400} height={200} alt=''></Image>
                    <div className='px-8 py-2'>
                     <h1 className='text-xl text-gray-300 mt-2 font-medium'>{item.name}</h1>
                     <p className='text-sm text-justify font-light'>{item.description}</p>
                     <div className='flex justify-between my-6'>
-                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' target='_blank' href={'/'}>Live View <FiMonitor className='text-xl'/> </Link>
-                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' href={'/'}>GitHub Link <FaGithub className='text-xl'/></Link>
+                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' target='_blank' href={item.live}>Live View <FiMonitor className='text-xl'/> </Link>
+                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' href={item.git}>GitHub Link <FaGithub className='text-xl'/></Link>
                     </div>
                    </div>
                 </motion.div>
