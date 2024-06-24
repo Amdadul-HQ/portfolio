@@ -4,16 +4,16 @@ import "react-tabs/style/react-tabs.css";
 
 const TabsPage = () => {
   return (
-    <div className="w-fit text-white mt-4 font-medium text-xl">
+    <div className="w-fit text-white mt-5 font-normal lg:font-medium text-sm lg:text-xl">
       <Tabs>
-        <TabList>
+        <TabList className='flex'>
           <Tab>Project Experience</Tab>
           <Tab>Personal Info</Tab>
           <Tab>Education And Certification</Tab>
         </TabList>
 
         <TabPanel>
-          <h1 className="text-xl text-purple-400 font-medium">
+          <h1 className="text-xl mt-4 text-purple-400 font-medium">
             More than 15+ projects experience.
           </h1>
           <ul className="text-sm list-disc font-light mt-4 space-y-2 ml-5">

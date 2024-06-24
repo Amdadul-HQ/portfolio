@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
           <Navbar />
         </header>
         <main className="max-w-screen-xl mx-auto">{children}</main>
-        {/* <footer>
+        <footer>
           <Footer />
-        </footer> */}
+        </footer>
       </body>
     </html>
   );

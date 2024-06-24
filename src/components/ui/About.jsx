@@ -9,12 +9,12 @@ import { fadeIn } from "../variants";
 const About = () => {
   return (
     <section id="about" className="flex min-h-screen flex-col justify-center">
-      <div className="flex flex-row-reverse mt-20 justify-around overflow-hidden">
+      <div className="flex lg:flex-row-reverse flex-col-reverse lg:px-0 px-5  mt-20 justify-around overflow-hidden">
         <motion.div
         variants={fadeIn('left',0.2)}
         initial="hidden"
         whileInView={"show"}
-         className="w-9/12 px-6">
+         className="lg:w-9/12  w-full lg:px-6">
           <h1 className="text-3xl text-gray-200 font-medium border-b-2 pb-2">
             About Me
           </h1>
@@ -38,6 +38,7 @@ const About = () => {
         variants={fadeIn('right',0.2)}
         initial="hidden"
         whileInView={"show"}
+        className=""
         >
           <Image
             className="bg-[rgba(22,26,49,1)] w-fit h-fit rounded-lg"

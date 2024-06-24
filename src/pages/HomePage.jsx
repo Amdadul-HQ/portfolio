@@ -11,8 +11,8 @@ const HomePage = () => {
             <Hero/>
             <Skills/>
             <Project/>
-            {/* <About/> */}
-            {/* <Contact/> */}
+            <About/>
+            <Contact/>
         </section>
     );
 };

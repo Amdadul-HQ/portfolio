@@ -16,8 +16,8 @@ const Contact = () => {
            <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
        Contact with me
       </h1>
-            <div className='flex items-center mt-10'>
-                <div className='w-1/2'>
+            <div className='flex lg:px-0 px-5 items-center lg:flex-row flex-col-reverse mt-10'>
+                <div className='lg:w-1/2'>
                     <h1 className='text-3xl font-medium'>Feel free to asking any of your Queries...</h1>
                     <div className='mt-10'>
                         <form>
@@ -36,7 +36,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className='w-1/2'>
+                <div className='lg:w-1/2'>
                 <Lottie animationData={contact}></Lottie>
                 </div>
             </div>
