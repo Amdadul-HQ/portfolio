@@ -8,8 +8,8 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 const Hero = () => {
     return (
-        <section className='flex items-center justify-between max-w-screen-xl mx-auto min-h-[calc(100vh-93px)]'>
-            <div className='text-5xl text-gray-300 font-medium overflow-hidden'>
+        <section className='flex lg:flex-row flex-col-reverse items-center justify-between max-w-screen-xl mx-auto min-h-[calc(100vh-93px)]'>
+            <div className='lg:text-5xl lg:mb-0 mb-8 lg:text-left text-2xl text-center text-gray-300 font-medium overflow-hidden'>
                 <motion.h3 
                 initial={{x:-200,opacity:0}}
                 animate={{
@@ -62,7 +62,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.6'
                 }}
-                className='text-gray-300 font-normal text-xl mt-2 overflow-hidden'>Who will provide you & your business unique identity</motion.p>
+                className='text-gray-300 font-normal text-base lg:text-xl mt-2 overflow-hidden'>Who will provide you & your business unique identity</motion.p>
                 <motion.button
                 initial={{x:-200,opacity:0}}
                 animate={{
@@ -73,7 +73,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.7'
                 }}
-                className='border-purple-300 px-6 py-2 mr-4 overflow-hidden text-xl font-medium border-2 mt-3 rounded-full'>
+                className='border-purple-300 lg:px-6 lg:py-2 mr-4 overflow-hidden lg:text-xl text-base py-1 px-2 lg:font-medium border-2 mt-3 rounded-full'>
                     <Link target='_blank' href={`https://drive.google.com/file/d/1ee_UDd7bBfWaU5V4Dw2wMLhPhs_S8ZRE/view`}>Download Resume</Link>
                 </motion.button>
                 <motion.button
@@ -86,7 +86,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.7'
                 }}
-                className='border-purple-300 px-6 py-2 overflow-hidden text-xl font-medium border-2 mt-3 rounded-full'>
+                className='border-purple-300 lg:px-6 lg:py-2 mr-4 overflow-hidden lg:text-xl text-base py-1 px-2 lg:font-medium border-2 mt-3 rounded-full'>
                     Let's Talk 💬
                 </motion.button>
             </div>
@@ -100,8 +100,8 @@ const Hero = () => {
                 duration:'1',
                 delay:'0.7'
             }}
-            className=' overflow-hidden'>
-                <Image src={"/file.png"} width={500} height={500} alt='' className='bg-transparent relative shadow-inner rounded-br-none backdrop-grayscale-0 border-2 border-purple-400 rounded-full'></Image>
+            className='lg:p-0 p-5 overflow-hidden'>
+                <Image src={"/file.png"} width={500} height={500} alt='' className='bg-transparent relative shadow-inner lg:rounded-br-none backdrop-grayscale-0 border-2 border-purple-400 rounded-full'></Image>
                 <motion.div
                  initial={{
                     opacity:0,
@@ -117,7 +117,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'2'
                  }}
-                 className='flex absolute right-40 bottom-[135px] text-gray-500 gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
+                 className='absolute lg:flex hidden right-40 bottom-[135px] text-gray-500 gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
                     <Link target='_blank' href={'https://www.facebook.com/amdadul.haque.54540218/'}><FaFacebook/></Link>
                     <Link target='_blank' href={'https://github.com/Amdadul-HQ'}><FaGithub/></Link>
                     <Link target='_blank' href={'https://www.linkedin.com/in/amdadul-haque-bhuiyan/'}><FaLinkedin/></Link>

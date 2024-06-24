@@ -8,7 +8,7 @@ import React from 'react';
 const HomePage = () => {
     return (
         <section>
-            {/* <Hero/> */}
+            <Hero/>
             {/* <Skills/>
             <Project/>
             <About/>
