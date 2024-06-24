@@ -26,76 +26,77 @@ const Skills = () => {
         My Skills
       </h1>
       <div className="mt-6">
-        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-2xl">
+        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-xl lg:text-2xl">
           Front-End Development
         </h1>
 
         <div>
           <Marquee className="max-w-[1200px] mx-auto">
-            <div className="flex text-8xl gap-x-20 mt-6">
-              <div className="flex justify-center flex-col items-center">
+            <div className="flex lg:text-8xl text-3xl gap-x-10 lg:gap-x-20 mt-6">
+              <div className="flex justify-center lg:ml-0 ml-8 flex-col items-center">
                 <FaHtml5 className="text-orange-500" />
-                <h1 className="text-white text-lg font-normal">HTML</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">HTML</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <IoLogoCss3 className="text-blue-500" />
-                <h1 className="text-white text-lg font-normal">CSS</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">CSS</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <IoLogoJavascript className="text-yellow-500" />
-                <h1 className="text-white text-lg font-normal">JavaScript</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">JavaScript</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <FaReact className="text-blue-700" />
-                <h1 className="text-white text-lg font-normal">React.Js</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">React.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <RiNextjsFill className="text-black" />
-                <h1 className="text-white text-lg font-normal">Next.Js</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">Next.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <RiTailwindCssFill className="text-blue-400" />
-                <h1 className="text-white text-lg font-normal">Tailwind CSS</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">Tailwind CSS</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <IoLogoFirebase className="text-orange-700" />
-                <h1 className="text-white text-lg font-normal">Firebase</h1>
+                <h1 className="text-white text-sm lg:text-lg font-normal">Firebase</h1>
               </div>
             </div>
           </Marquee>
         </div>
       </div>
       <div className="mt-6">
-        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-2xl">
+        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-xl lg:text-2xl">
           Back-End Development
         </h1>
 
         <div>
           <Marquee direction="right" className="max-w-[1200px] mx-auto">
-            <div className="flex text-8xl gap-x-28 mt-6">
-              <div className="flex justify-center flex-col items-center">
+            <div className="flex lg:text-8xl text-3xl gap-x-10 lg:gap-x-20 mt-6">
+              <div className="flex justify-center lg:ml-0 ml-8 flex-col items-center">
                 <SiMongodb className="text-green-500" />
-                <h1 className="text-white text-lg font-normal">MongoDB</h1>
+                <h1 className="text-white  text-sm lg:text-lg font-normal">MongoDB</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <DiNodejs className="text-blue-500" />
-                <h1 className="text-white text-lg font-normal">Node.Js</h1>
+                <h1 className="text-white  text-sm lg:text-lg font-normal">Node.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <SiExpress className="text-yellow-500" />
-                <h1 className="text-white text-lg font-normal">Express.Js</h1>
+                <h1 className="text-white  text-sm lg:text-lg font-normal">Express.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
-                <Image src={"/jwt.png"} width={96} height={96} alt=""></Image>
-                <h1 className="text-white text-lg font-normal">JWT</h1>
+                <Image src={"/jwt.png"} width={96} height={96} className="lg:block hidden" alt=""></Image>
+                <Image src={"/jwt.png"} width={14} height={14} className="block lg:hidden" alt=""></Image>
+                <h1 className="text-white text-sm lg:mt-0 mt-2 lg:text-lg font-normal">JWT</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <RiNextjsFill className="text-black" />
-                <h1 className="text-white text-lg font-normal">Next.Js</h1>
+                <h1 className="text-white  text-sm lg:text-lg font-normal">Next.Js</h1>
               </div>
               <div className="flex justify-center flex-col items-center">
                 <IoLogoFirebase className="text-orange-700" />
-                <h1 className="text-white text-lg font-normal">Firebase</h1>
+                <h1 className="text-white  text-sm lg:text-lg font-normal">Firebase</h1>
               </div>
             </div>
           </Marquee>

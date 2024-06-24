@@ -9,10 +9,10 @@ const HomePage = () => {
     return (
         <section>
             <Hero/>
-            {/* <Skills/>
+            <Skills/>
             <Project/>
-            <About/>
-            <Contact/> */}
+            {/* <About/> */}
+            {/* <Contact/> */}
         </section>
     );
 };
