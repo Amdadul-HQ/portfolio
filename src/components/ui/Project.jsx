@@ -8,6 +8,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FiMonitor } from "react-icons/fi";
 import { fadeIn } from '../variants';
 import { motion } from 'framer-motion';
+import FullStackProject from './FullStackProject';
 const project = [
     {   
         id:1,
@@ -47,7 +48,8 @@ const Project = () => {
            <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
         My Project's
       </h1>
-      <div className='mx-auto grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-5 gap-6 mt-10 '>
+      <FullStackProject/>
+      {/* <div className='mx-auto grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-5 gap-6 mt-10 '>
         
             {
                 project.map(item => <li className='list-none' key={item.id}>
@@ -68,7 +70,7 @@ const Project = () => {
             }
       
        
-      </div>
+      </div> */}
            </div>
             
         </motion.section>
