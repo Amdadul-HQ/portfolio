@@ -57,15 +57,15 @@ const project = [
 
 const FullStackProject = () => {
     return (
-        <div className='grid grid-cols-2 gap-6 relative z-10 mt-10'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 relative z-10 mt-10'>
             {
                 project.map(project => <div className='p-9 pb-0 bg-[#140C1C] group z-10 rounded-xl relative transition-all duration-500' key={project.id}>
                 <Image src={project.image} width={550} className='h-[475px]' height={475} alt='' />
                 
-                <div className='absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8750f7] to-[#2a1454] group-hover:opacity-100 transition-all -bottom-12 group-hover:bottom-5 rounded-2xl -left-0 duration-500 opacity-0 w-[550px] '>
+                <div className='absolute h-fit flex justify-between items-center bg-gradient-to-r p-2 lg:p-5 from-[#8750f7] to-[#2a1454] group-hover:opacity-100 transition-all -bottom-12 group-hover:bottom-5 rounded-2xl -left-0 duration-500 opacity-0 lg:w-[550px] '>
                     <div className='max-w-[85%]'>
-                    <h1 className='text-xl text-white font-semibold'>Project Name: {project.name}</h1>
-                    <p className='text-sm text-justify text-white mt-1 font-normal'>{project.projectShortDes}</p>
+                    <h1 className='lg:text-xl text-base text-white font-semibold'>Project Name: {project.name}</h1>
+                    <p className='lg:text-sm text-xs text-justify text-white mt-1 font-normal'>{project.projectShortDes}</p>
                     <div>
                     <div className='flex justify-between my-3'>
                         <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-300' target='_blank' href={project.live}>Live View <FiMonitor className='text-xl'/> </Link>
@@ -74,7 +74,7 @@ const FullStackProject = () => {
                     </div>
                     </div>
                     <div>
-                    <BsArrowDownRight className='group-hover:-rotate-90 text-5xl transition-all rotate-180 delay-200 duration-300'/>
+                    <BsArrowDownRight className='group-hover:-rotate-90 lg:text-5xl transition-all rotate-180 delay-200 duration-300'/>
                     </div>
                 </div> 
                 </div>)
