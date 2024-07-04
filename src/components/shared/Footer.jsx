@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -8,12 +9,7 @@ const Footer = () => {
         className="py-20 border-purple-400 border-t rounded-2xl bg-[rgba(22,26,49,1)]"
       >
         <div className="text-gray-200 flex justify-center mx-auto flex-col max-w-44 cursor-pointer">
-          <h1 className="text-3xl text-justify font-medium tracking-[7px]">
-            Rimon
-          </h1>
-          <p className="text-gray-400 tracking-wide uppercase text-xs font-normal">
-            Create your unique
-          </p>
+         <Image src='/riwhitelogo.png' width={140} height={80} alt="" />
         </div>
         <div className="max-w-[900px] mx-auto">
           <p className="text-base text-gray-400 mt-6 font-medium text-center">

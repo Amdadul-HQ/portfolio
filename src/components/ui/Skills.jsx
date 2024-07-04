@@ -1,109 +1,84 @@
-"use client";
-import React from "react";
-import Marquee from "react-fast-marquee";
-import { FaHtml5, FaReact } from "react-icons/fa";
+import Image from 'next/image';
+import React from 'react';
+import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
+import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiMongodb } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { createContext } from 'react';
-import { fadeIn } from "../variants";
-
+import { FaReact } from "react-icons/fa";
+import { SiAdobexd, SiExpress, SiJsonwebtokens, SiMongodb } from "react-icons/si";
+import { FaGithub, FaNode, FaStripe } from 'react-icons/fa6';
+import { IoLogoFigma, IoLogoFirebase } from "react-icons/io5";
+import { VscDebug, VscVscode } from "react-icons/vsc";
+import { BsStripe } from 'react-icons/bs';
 const Skills = () => {
-  return (
-    <motion.section
-    id="myskills"
-     variants={fadeIn('up',0.2)}
-     initial="hidden"
-     whileInView="show"
-      className="mt-32 overflow-hidden min-h-screen flex flex-col justify-center"
-    >
-      <h1 className="text-3xl mt-40 text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
-        My Skills
-      </h1>
-      <div className="mt-6">
-        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-xl lg:text-2xl">
-          Front-End Development
-        </h1>
-
-        <div>
-          <Marquee className="max-w-[1200px] mx-auto">
-            <div className="flex lg:text-8xl text-3xl gap-x-10 lg:gap-x-20 mt-6">
-              <div className="flex justify-center lg:ml-0 ml-8 flex-col items-center">
-                <FaHtml5 className="text-orange-500" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">HTML</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <IoLogoCss3 className="text-blue-500" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">CSS</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <IoLogoJavascript className="text-yellow-500" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">JavaScript</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <FaReact className="text-blue-700" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">React.Js</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <RiNextjsFill className="text-black" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">Next.Js</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <RiTailwindCssFill className="text-blue-400" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">Tailwind CSS</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <IoLogoFirebase className="text-orange-700" />
-                <h1 className="text-white text-sm lg:text-lg font-normal">Firebase</h1>
-              </div>
-            </div>
-          </Marquee>
-        </div>
-      </div>
-      <div className="mt-6">
-        <h1 className="text-gray-200 text-center px-6 py-2 mx-auto bg-slate-900 w-fit rounded-full font-medium text-xl lg:text-2xl">
-          Back-End Development
-        </h1>
-
-        <div>
-          <Marquee direction="right" className="max-w-[1200px] mx-auto">
-            <div className="flex lg:text-8xl text-3xl gap-x-10 lg:gap-x-20 mt-6">
-              <div className="flex justify-center lg:ml-0 ml-8 flex-col items-center">
-                <SiMongodb className="text-green-500" />
-                <h1 className="text-white  text-sm lg:text-lg font-normal">MongoDB</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <DiNodejs className="text-blue-500" />
-                <h1 className="text-white  text-sm lg:text-lg font-normal">Node.Js</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <SiExpress className="text-yellow-500" />
-                <h1 className="text-white  text-sm lg:text-lg font-normal">Express.Js</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <Image src={"/jwt.png"} width={96} height={96} className="lg:block hidden" alt=""></Image>
-                <Image src={"/jwt.png"} width={14} height={14} className="block lg:hidden" alt=""></Image>
-                <h1 className="text-white text-sm lg:mt-0 mt-2 lg:text-lg font-normal">JWT</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <RiNextjsFill className="text-black" />
-                <h1 className="text-white  text-sm lg:text-lg font-normal">Next.Js</h1>
-              </div>
-              <div className="flex justify-center flex-col items-center">
-                <IoLogoFirebase className="text-orange-700" />
-                <h1 className="text-white  text-sm lg:text-lg font-normal">Firebase</h1>
-              </div>
-            </div>
-          </Marquee>
-        </div>
-      </div>
-    </motion.section>
-  );
+    return (
+        <section className='py-32 max-w-screen-xl mx-auto' id='skills'>
+            <div className='text-center mb-6'>
+             <h1 className='text-white text-5xl font-semibold'>My Skills</h1>
+             <p className='text-white font-normal text-lg max-w-[660px] mx-auto mt-3'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+             </div>
+             <div className='grid grid-cols-6 gap-5'>
+                
+                   
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454]  shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-orange-600'>HTML<FaHtml5 className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-orange-600  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-blue-600'>CSS<IoLogoCss3 className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-600  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-yellow-600'>JavaScript<RiJavascriptFill className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-yellow-600  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-blue-500'>Tailwind<RiTailwindCssFill className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-500  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-blue-400'>React<FaReact className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-400  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-gray-400'>Next JS<RiNextjsFill className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-gray-400  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                
+             </div>
+             <div className='grid grid-cols-5 gap-5 mt-10'>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454]  shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-green-600'>MongoDB<SiMongodb className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-green-600  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-slate-700'>Node JS<FaNode className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-green-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-yellow-500'>ExpressJs<SiExpress className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-yellow-500  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-orange-400'>Firebase<IoLogoFirebase className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-orange-400  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-black'>JWT<SiJsonwebtokens className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-black  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+             </div>
+             <div className='grid grid-cols-6 gap-5 mt-10'>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454]  shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-blue-700'>VS Code<VscVscode className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-gray-100'>GitHub<FaGithub className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-black-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-orange-600'>Figma<IoLogoFigma className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-300  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-purple-900'>Firebase<SiAdobexd className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-purple-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-blue-500'>Stripe<BsStripe className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-500  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+                    <div className='p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 text-2xl font-semibold justify-center group-hover:text-red-500'>Debuging<VscDebug className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-red-500  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                    </div>
+             </div>
+        </section>
+    );
 };
 
 export default Skills;
