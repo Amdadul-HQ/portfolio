@@ -21,44 +21,44 @@ const Contact = () => {
       </h1>
             <div className='flex lg:px-0 px-5 items-center lg:flex-row flex-col-reverse mt-10'>
             <div className='lg:w-1/2'>
-                    <h1 className='text-5xl text-white font-semibold'>Let’s work together!</h1>
-                    <p className='text-xl font-medium text-white mt-4'>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+                    <h1 className='lg:text-5xl text-white font-semibold'>Let’s work together!</h1>
+                    <p className='lg:text-xl font-medium text-white mt-4'>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
                     <div className='mt-5 space-y-3'>
-                        <div className='flex justify-between'>
+                        <div className='flex lg:flex-row flex-col justify-between'>
                         <div className='flex items-center gap-x-3 text-white'>
                             <p className='bg-gradient-to-t rounded-full from-[#8750f7] to-[#2a1454] w-[50px] h-[50px] flex justify-center items-center'>
-                            <IoCallOutline className='text-2xl font-medium' />
+                            <IoCallOutline className='lg:text-2xl font-medium' />
                             </p>
                            <div>
-                            <p className='text-xl'>Phone</p>
-                            <p className='text-xl font-semibold'>+8801756171239</p>
+                            <p className='lg:text-xl'>Phone</p>
+                            <p className='lg:text-xl font-semibold'>+8801756171239</p>
                            </div>
                         </div>
                         <div className='flex items-center gap-x-3 text-white'>
                             <p className='bg-gradient-to-t rounded-full from-[#8750f7] to-[#2a1454] w-[50px] h-[50px] flex justify-center items-center'>
-                            <MdOutlineMail className='text-2xl font-medium' />
+                            <MdOutlineMail className='lg:text-2xl font-medium' />
                             </p>
                            <div>
-                            <p className='text-xl'>Email</p>
-                            <p className='text-xl font-semibold'>rimonamdadul301@gmail.com</p>
+                            <p className='lg:text-xl'>Email</p>
+                            <p className='lg:text-xl font-semibold'>rimonamdadul301@gmail.com</p>
                            </div>
                         </div>
                         </div>
                         <div className='flex items-center gap-x-3 text-white'>
                             <p className='bg-gradient-to-t rounded-full from-[#8750f7] to-[#2a1454] w-[50px] h-[50px] flex justify-center items-center'>
-                            <CiLocationOn className='text-2xl font-medium' />
+                            <CiLocationOn className='lg:text-2xl font-medium' />
                             </p>
                            <div>
-                            <p className='text-xl'>Address</p>
-                            <p className='text-xl font-semibold'>Feni, Bangladesh</p>
+                            <p className='lg:text-xl'>Address</p>
+                            <p className='lg:text-xl font-semibold'>Feni, Bangladesh</p>
                            </div>
                         </div>
                     </div>
                     <div className='mt-10'>
                         <form>
-                            <div className='flex gap-x-5'>
-                            <input className='bg-[rgba(22,26,49,1)] h-11 block w-full px-5 rounded-lg border border-purple-300' type="email" name="email" id="" placeholder='Enter Your Email'/>
-                            <input className='bg-[rgba(22,26,49,1)] h-11 block w-full px-5 rounded-lg border border-purple-300' type="tel" name="phone" id="" placeholder='Phone Number'/>
+                            <div className='flex lg:flex-row flex-col gap-y-5 gap-x-5'>
+                            <input className='bg-[rgba(22,26,49,1)] h-11 block lg:w-full px-5 rounded-lg border border-purple-300' type="email" name="email" id="" placeholder='Enter Your Email'/>
+                            <input className='bg-[rgba(22,26,49,1)] h-11 block lg:w-full px-5 rounded-lg border border-purple-300' type="tel" name="phone" id="" placeholder='Phone Number'/>
                             </div>
                             <div className='mt-4'>
                             <textarea className='bg-[rgba(22,26,49,1)] h-40 pt-4 block w-full px-5 rounded-lg border border-purple-300' name="message" placeholder='Message' id=""></textarea>
