@@ -1,4 +1,5 @@
 import About from '@/components/ui/About';
+import Blogs from '@/components/ui/Blogs';
 import Contact from '@/components/ui/Contact';
 import Hero from '@/components/ui/Hero';
 import Project from '@/components/ui/Project';
@@ -12,6 +13,7 @@ const HomePage = () => {
             <Skills/>
             <Project/>
             <About/>
+            <Blogs/>
             <Contact/>
         </section>
     );
