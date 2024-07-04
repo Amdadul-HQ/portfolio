@@ -101,7 +101,11 @@ const Hero = () => {
                 delay:'0.7'
             }}
             className='lg:p-0 p-5 overflow-hidden'>
-                <Image src={"/file.png"} width={500} height={500} alt='' className='bg-transparent relative shadow-inner lg:rounded-br-none backdrop-grayscale-0 border-2 border-purple-400 rounded-full'></Image>
+                <Image src='/hero.png' width={472} height={506} style={{
+                        borderRadius:'30px',
+                        
+                        
+                    }} className='rotate-[5deg] z-10 hover:rotate-0 border-2 transition-all duration-500 border-[#2a1454] hover:border-[#8750f7]' alt=''/>
                 <motion.div
                  initial={{
                     opacity:0,
