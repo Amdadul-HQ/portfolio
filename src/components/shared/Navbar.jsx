@@ -6,29 +6,27 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [pathname,setpathname] = useState('')
+  const [active,setActive] = useState(false)
   const scroll=()=> window.addEventListener("scroll",()=>{
     if(window.scrollY > 100){
       const scrolled = window.scrollY
-      console.log(scrolled);
+      // console.log(scrolled);
       if(scrolled<730){
         setpathname('#home')
       }
-      if(scrolled>=730 && scrolled<2373){
-        setpathname('#service')
-      }
-      if(scrolled>=2373 && scrolled<3767){
-        setpathname('#project')
-      }
-      if(scrolled>=3767 && scrolled<4489){
+      if(scrolled>=610 && scrolled<1200){
         setpathname('#skills')
       }
-      if(scrolled>= 4489 && scrolled < 5394){
+      if(scrolled>=1200 && scrolled<2642){
+        setpathname('#project')
+      }
+      if(scrolled>=2642 && scrolled<3332){
         setpathname('#about')
       }
-      if(scrolled>=5394 && scrolled <6100){
+      if(scrolled>= 3332 && scrolled < 4455){
         setpathname('#blogs')
       }
-      if(scrolled>=6100){
+      if(scrolled>=4100){
         setpathname('#contact')
       }
       setActive(true)
@@ -45,11 +43,11 @@ const Navbar = () => {
     const links = [
         {
             title:"HOME",
-            path:"/"
+            path:"#home"
         },
         {
-            title:"SKILL's",
-            path:"#myskills"
+            title:"SKILLs",
+            path:"#skills"
         },
         {
           title:"PROJECT",
@@ -58,6 +56,10 @@ const Navbar = () => {
         {
             title:"ABOUT",
             path:"#about"
+        },
+        {
+          title:"BLOGS",
+          path:"#blogs"
         },
         {
           title:"CONTACT",

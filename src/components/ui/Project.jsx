@@ -49,28 +49,6 @@ const Project = () => {
         My Project's
       </h1>
       <FullStackProject/>
-      {/* <div className='mx-auto grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-5 gap-6 mt-10 '>
-        
-            {
-                project.map(item => <li className='list-none' key={item.id}>
-                <motion.div
-                
-                className='border-2 group rounded-[30px] bg-[rgba(22,26,49,1)] overflow-hidden '>
-                    <Image src={item.img} style={{width:'100%',height:'280px',}} className='rounded-t-3xl h-[200px] group-hover:scale-105 overflow-hidden transition-all duration-300'  width={400} height={200} alt=''></Image>
-                   <div className='px-8 py-2'>
-                    <h1 className='text-xl text-gray-300 mt-2 font-medium'>{item.name}</h1>
-                    <p className='text-sm text-justify font-light'>{item.description}</p>
-                    <div className='flex justify-between my-6'>
-                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' target='_blank' href={item.live}>Live View <FiMonitor className='text-xl'/> </Link>
-                        <Link className='flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400' href={item.git}>GitHub Link <FaGithub className='text-xl'/></Link>
-                    </div>
-                   </div>
-                </motion.div>
-                </li>)
-            }
-      
-       
-      </div> */}
            </div>
             
         </motion.section>

@@ -8,7 +8,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 const Hero = () => {
     return (
-        <section className='flex lg:flex-row flex-col-reverse items-center justify-between max-w-screen-xl mx-auto min-h-[calc(100vh-93px)]'>
+        <section id='home' className='flex lg:flex-row flex-col-reverse items-center justify-between max-w-screen-xl mx-auto min-h-[calc(100vh-93px)]'>
             <div className='lg:text-5xl lg:mb-0 mb-8 lg:text-left text-2xl text-center text-gray-300 font-medium overflow-hidden'>
                 <motion.h3 
                 initial={{x:-200,opacity:0}}
