@@ -8,7 +8,7 @@ import React from 'react';
 
 const HomePage = () => {
     return (
-        <section>
+        <section className='lg:px-5'>
             <Hero/>
             <Skills/>
             <Project/>

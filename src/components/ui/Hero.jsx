@@ -100,12 +100,12 @@ const Hero = () => {
                 duration:'1',
                 delay:'0.7'
             }}
-            className='lg:p-0 p-5 overflow-hidden'>
+            className='lg:p-0 p-5 overflow-hidden flex justify-center items-center'>
                 <Image src='/hero.png' width={472} height={506} style={{
                         borderRadius:'30px',
                         
                         
-                    }} className='rotate-[5deg] z-10 hover:rotate-0 border-2 transition-all duration-500 border-[#2a1454] hover:border-[#8750f7]' alt=''/>
+                    }} className='rotate-[5deg] z-10 hover:rotate-0 border-2 transition-all p-5 duration-500 border-[#2a1454] hover:border-[#8750f7]' alt=''/>
                 <motion.div
                  initial={{
                     opacity:0,
@@ -121,7 +121,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'2'
                  }}
-                 className='absolute lg:flex hidden right-40 bottom-[135px] text-gray-500 gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
+                 className='absolute lg:flex hidden right-48 bottom-[135px] text-gray-500 gap-4 flex-col text-3xl  rounded-2xl mt-4 justify-center z-50 py-3'>
                     <Link target='_blank' href={'https://www.facebook.com/amdadul.haque.54540218/'}><FaFacebook/></Link>
                     <Link target='_blank' href={'https://github.com/Amdadul-HQ'}><FaGithub/></Link>
                     <Link target='_blank' href={'https://www.linkedin.com/in/amdadul-haque-bhuiyan/'}><FaLinkedin/></Link>

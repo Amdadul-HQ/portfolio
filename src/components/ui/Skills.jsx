@@ -14,7 +14,9 @@ const Skills = () => {
     return (
         <section className='py-32 max-w-screen-xl mx-auto lg:px-0 px-5' id='skills'>
             <div className='text-center mb-6 '>
-             <h1 className='text-white lg:text-5xl font-semibold'>My Skills</h1>
+            <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
+            My Skills
+      </h1>  
              <p className='text-white font-normal lg:text-lg max-w-[660px] mx-auto mt-3'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
              </div>
              <div className='grid lg:grid-cols-6 grid-cols-3 gap-5'>
@@ -68,7 +70,7 @@ const Skills = () => {
                         <p className='text-[#8750F7] text-center flex items-center gap-x-1 lg:text-2xl font-semibold justify-center group-hover:text-orange-600'>Figma<IoLogoFigma className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-300  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
                     </div>
                     <div className='lg:p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
-                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 lg:text-2xl font-semibold justify-center group-hover:text-purple-900'>Firebase<SiAdobexd className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-purple-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
+                        <p className='text-[#8750F7] text-center flex items-center gap-x-1 lg:text-2xl font-semibold justify-center group-hover:text-purple-900'>AdobeXD<SiAdobexd className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-purple-700  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>
                     </div>
                     <div className='lg:p-4 bg-[#140C1C] rounded-3xl border-[#2a1454] border hover:bg-[#331e5e] group hover:border-[#8750f7] transition-all duration-300 shadow-black hover:shadow-[#2a1454] shadow-2xl'>
                         <p className='text-[#8750F7] text-center flex items-center gap-x-1 lg:text-2xl font-semibold justify-center group-hover:text-blue-500'>Stripe<BsStripe className='grayscale-[80%] text-3xl scale-90 group-hover:scale-100 text-blue-500  bg-transparent group-hover:grayscale-0 transition-all duration-300 rounded-xl bg-[#140C1C]' /></p>

@@ -7,7 +7,9 @@ const Blogs = () => {
     return (
         <section className='py-32 max-w-screen-xl mx-auto lg:px-0 px-5' id='blogs'>
             <div className='text-center mb-6'>
-             <h1 className='text-white text-5xl font-semibold'>My Recent Blogs</h1>
+            <h1 className="text-3xl text-gray-100 text-center mx-auto font-medium w-fit rounded-2xl px-4 border-purple-400 border-b-2 pb-2">
+            My Recent Blogs
+      </h1>
              <p className='text-white font-normal text-lg max-w-[660px] mx-auto mt-3'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
              </div>
              <div className='grid lg:grid-cols-3 grid-cols-1 gap-6'>
