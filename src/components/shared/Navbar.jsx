@@ -1,12 +1,47 @@
 "use client"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hamburger from 'hamburger-react'
 import Image from "next/image";
 
 const Navbar = () => {
-    const pathName = usePathname()
+  const [pathName,setpathname] = useState('')
+  const scroll=()=> window.addEventListener("scroll",()=>{
+    if(window.scrollY > 100){
+      const scrolled = window.scrollY
+      console.log(scrolled);
+      if(scrolled<730){
+        setpathname('#home')
+      }
+      if(scrolled>=730 && scrolled<2373){
+        setpathname('#service')
+      }
+      if(scrolled>=2373 && scrolled<3767){
+        setpathname('#project')
+      }
+      if(scrolled>=3767 && scrolled<4489){
+        setpathname('#skills')
+      }
+      if(scrolled>= 4489 && scrolled < 5394){
+        setpathname('#about')
+      }
+      if(scrolled>=5394 && scrolled <6100){
+        setpathname('#blogs')
+      }
+      if(scrolled>=6100){
+        setpathname('#contact')
+      }
+      setActive(true)
+    }
+    else{
+      setActive(false)
+    }
+  })
+  useEffect(()=>{
+    scroll()
+  },[pathname])
+
+  
     const links = [
         {
             title:"HOME",
@@ -31,7 +66,7 @@ const Navbar = () => {
     ]
     const [isOpen, setOpen] = useState(false)
   return (
-    <nav className="container mx-auto py-4 flex justify-between items-center border-b border-purple-300 px-5 rounded-xl shadow-xl">
+    <nav className="container fixed max-w-screen-xl mx-auto py-4 flex justify-between items-center border-b border-purple-300 px-5 rounded-xl shadow-xl">
       <div className="text-gray-200 flex flex-col max-w-44 cursor-pointer">
         <Image src='/riwhitelogo.png' width={140} height={80} alt=""/>
         {/* <h1 className="lg:text-3xl text-xl text-justify font-medium tracking-[7px]">Rimon</h1>
