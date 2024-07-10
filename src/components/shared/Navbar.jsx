@@ -5,7 +5,7 @@ import Hamburger from 'hamburger-react'
 import Image from "next/image";
 
 const Navbar = () => {
-  const [pathName,setpathname] = useState('')
+  const [pathname,setpathname] = useState('')
   const scroll=()=> window.addEventListener("scroll",()=>{
     if(window.scrollY > 100){
       const scrolled = window.scrollY
@@ -74,7 +74,7 @@ const Navbar = () => {
       </div>
       <ul className={`text-gray-400 lg:text-sm text-xl mt-2 lg:gap-y-0 gap-y-5 lg:text-left text-right flex lg:flex-row flex-col  transition-all duration-1000 ${isOpen ? 'right-6 top-20' : '-right-full top-20'} gap-x-14 lg:static fixed font-normal`}>
         {
-            links.map((link,index )=> <Link className={`${pathName === link.path && "text-white"} hover:text-white transition-all duration-300`} href={link.path} key={index}>{link.title}</Link>  )
+            links.map((link,index )=> <Link className={`${pathname === link.path && "text-white"} hover:text-white transition-all duration-300`} href={link.path} key={index}>{link.title}</Link>  )
         }
       </ul>
       <div className="lg:hidden">

@@ -73,7 +73,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.7'
                 }}
-                className='border-purple-300 lg:px-6 lg:py-2 mr-4 overflow-hidden lg:text-xl text-base py-1 px-2 lg:font-medium border-2 mt-3 rounded-full'>
+                className='border-purple-300 lg:px-6 lg:py-2 mr-4 overflow-hidden lg:text-xl  text-base py-1 px-2 lg:font-medium border-2 mt-3 rounded-full'>
                     <Link target='_blank' href={`https://drive.google.com/file/d/1ee_UDd7bBfWaU5V4Dw2wMLhPhs_S8ZRE/view`}>Download Resume</Link>
                 </motion.button>
                 <motion.button
@@ -100,7 +100,7 @@ const Hero = () => {
                 duration:'1',
                 delay:'0.7'
             }}
-            className='lg:p-0 p-5 overflow-hidden flex justify-center items-center'>
+            className='lg:p-0 p-5 overflow-hidden h-full flex justify-center mt-40 items-center'>
                 <Image src='/hero.png' width={472} height={506} style={{
                         borderRadius:'30px',
                         
