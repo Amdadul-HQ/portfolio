@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import contact from "../../../public/contact.json";
+import toast, { Toaster } from 'react-hot-toast';
 import Lottie from "lottie-react";
 import emailjs from "@emailjs/browser";
 import { createContext } from "react";
@@ -30,6 +31,7 @@ const Contact = () => {
       .then(
         (response) => {
         //   console.log("SUCCESS!", response.status, response.text);
+        toast.success('Your Message Successfully Send')
           form.reset()
         },
         (err) => {
@@ -134,6 +136,7 @@ const Contact = () => {
           <Lottie animationData={contact}></Lottie>
         </div>
       </div>
+      <Toaster/>
     </motion.section>
   );
 };
