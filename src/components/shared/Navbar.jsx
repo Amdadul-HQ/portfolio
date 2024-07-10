@@ -11,8 +11,9 @@ const Navbar = () => {
     if(window.scrollY > 100){
       const scrolled = window.scrollY
       // console.log(scrolled);
-      if(scrolled<730){
+      if(scrolled<610){
         setpathname('#home')
+        // if(scrolled>)
       }
       if(scrolled>=610 && scrolled<1200){
         setpathname('#skills')

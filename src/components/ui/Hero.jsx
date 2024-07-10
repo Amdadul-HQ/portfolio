@@ -20,7 +20,7 @@ const Hero = () => {
                     duration:'1',
                     delay:'0.3'
                 }}
-                className='overflow-hidden'
+                className='overflow-hidden lg:mt-80'
                 >
                 Hello 👋
                 </motion.h3>
